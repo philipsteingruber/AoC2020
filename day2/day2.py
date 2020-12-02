@@ -2,7 +2,7 @@ import re
 from collections import Counter
 
 
-def day1(lines):
+def part1(lines):
     policy_pattern = re.compile(r'(\d+)-(\d+) (\w)')
     password_pattern = re.compile(r': (\w+)')
 
@@ -20,7 +20,7 @@ def day1(lines):
 
     return valid_passwords_count
 
-def day2(lines):
+def part2(lines):
     policy_pattern = re.compile(r'(\d+)-(\d+) (\w)')
     password_pattern = re.compile(r': (\w+)')
 
@@ -40,5 +40,5 @@ def day2(lines):
 if __name__ == '__main__':
     with open('input.txt', 'r') as file:
         inputlines = file.readlines()
-    print(day1(inputlines))
-    print(day2(inputlines))
+    print(part1(inputlines))
+    print(part2(inputlines))
