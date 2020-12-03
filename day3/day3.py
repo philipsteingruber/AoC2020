@@ -15,11 +15,11 @@ def run_slope(lines, x_delta, y_delta):
     return trees_hit
 
 
-def day1(lines):
+def part1(lines):
     print('Part 1:', run_slope(lines, 3, 1))
 
 
-def day2(lines):
+def part2(lines):
     slopes = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
 
     slope_results = []
@@ -32,5 +32,5 @@ def day2(lines):
 if __name__ == '__main__':
     with open('input.txt', 'r') as file:
         lines = list(map(str.strip, file.readlines()))
-    day1(lines)
-    day2(lines)
+    part1(lines)
+    part2(lines)
