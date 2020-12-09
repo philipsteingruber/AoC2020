@@ -1,7 +1,6 @@
 from itertools import combinations
 
 
-
 def part1(lines, preamble_length):
     preamble_start, preamble_end = 0, preamble_length
     preamble = lines[:preamble_length]
@@ -32,6 +31,8 @@ if __name__ == '__main__':
     with open('input.txt') as file:
         lines = list(map(int, file.readlines()))
     preamble_length = 25
+
     part1_solution = part1(lines, preamble_length)
     print('Part 1:', part1_solution)
+
     print('Part 2:', part2(lines, part1_solution))
